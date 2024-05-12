@@ -63,6 +63,15 @@ If you are interested in the detailed specification you can visit
 https://www.conventionalcommits.org/ or check out the
 [Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
+### Pull Request Guideliness
+
+- The main branch is basically a snapshot of the latest production version. All development must be done in dedicated branches.
+- When create a new branch we follow the convention `[type/scope]`. `type` can be either `docs`, `fix`, `feat`, `build`, or any other conventional commit `type`. `scope` is just a short id that describes the scope of work. For example `fix/dropdown-hook`
+- It is good to have multiple small commits while working on the PR.
+- We define and describe what the pull request is meant to change in the PR template.
+- We don´t leave development related code like `console.log`
+- The automated tests must succeed before merging to main
+
 ### Build
 
 To build all apps and packages, run the following command:
